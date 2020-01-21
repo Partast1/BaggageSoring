@@ -13,6 +13,7 @@ public class BaggageCheckIn {
 			
 			for (Baggage bag : pass.luggage) {
 				sorting.Receive(bag);
+				//a
 		}
 		}
 
