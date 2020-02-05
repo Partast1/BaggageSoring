@@ -4,9 +4,10 @@ public class ProductionThreadHandler extends Thread {
 	
 		Departure departure = new Departure();
 		BaggageCheckIn checkIn = new BaggageCheckIn();
+	AirplaneFactory airplaneFac = new AirplaneFactory();
 	@Override
 	public void run() {
-		AirplaneFactory airplaneFac = new AirplaneFactory();
+
 		Airplane airplane = airplaneFac.GenerateAirplane();
 		departure.RecieveAirplane(airplane);
 		
