@@ -9,15 +9,23 @@ public class ProductionThreadHandler extends Thread {
 	public void run() {
 
 		Airplane airplane = airplaneFac.GenerateAirplane();
+
+		System.out.print("Airplane created" + airplane.getDestination());
+
 		departure.RecieveAirplane(airplane);
 		
 		
 		PassengerFactory pf = new PassengerFactory();
 		for (int i = 0; i < 4; i++) {
-			Passenger pass = pf.Generate();
+			Passenger pass = pf.GenerateRandomPerson();
 			airplane.manifest.passengers.add(pass);
 			checkIn.Recieve(pass);		
 	}
+		for (Passenger pass: airplane.manifest.passengers)
+		{
+			System.out.print(" " + pass.getFirstName());
+
+		}
 		
 //		Samme flightnumbers og passengers bliver genereret
 //		for (int i = 0; i < 4; i++) {

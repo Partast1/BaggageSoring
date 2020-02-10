@@ -5,9 +5,10 @@ public class Airplane {
 	private int flightNumber;
 	private String destination;
 	
-	public Airplane(int FlightNumb, Manifest mf) {
+	public Airplane(int FlightNumb, Manifest mf, String des) {
 		setFlightNumber(FlightNumb);
 		manifest = mf;
+		setDestination(des);
 		
 	}
 	

@@ -55,12 +55,12 @@ public class PassengerGenerator {
 	}
 
 
-public String getFirstName() {
+public String getRandomFirstName() {
 		Random rnd = new Random();
 		String name;
 		return name = firstn.get(rnd.nextInt(firstn.size()));
 }
-public String getLastName() {
+public String getRandomLastName() {
 	Random rnd = new Random();
 	String lname;
 	return lname = lastn.get(rnd.nextInt(lastn.size()));

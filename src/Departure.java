@@ -10,10 +10,10 @@ public class Departure {
 	 {
 		 airplanes.add(plane);
 	 }
-	 public void toString(){
-		 for (Airplane plane: airplanes)
-		 {
-			System.out.print(plane.manifest);
-		 }
-	 }
+//	 public void toString(){
+//		 for (Airplane plane: airplanes)
+//		 {
+//			System.out.print(plane.manifest);
+//		 }
+//	 }
 }

@@ -1,16 +1,22 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class DestinationGenerator {
-    List<String> destiantions;
+    List<String> destinations;
 
 public  DestinationGenerator(){
-    destiantions = new ArrayList<>();
-    destiantions.add("Copenhagen");
-    destiantions.add("Dubai");
-    destiantions.add("Berlin");
-    destiantions.add("Stockholm");
-    destiantions.add("Oslo");
-    destiantions.add("London");
+    destinations = new ArrayList<>();
+    destinations.add("Copenhagen");
+    destinations.add("Dubai");
+    destinations.add("Berlin");
+    destinations.add("Stockholm");
+    destinations.add("Oslo");
+    destinations.add("London");
 }
+    public String getRandomDestination() {
+        Random rnd = new Random();
+        String des;
+        return des = destinations.get(rnd.nextInt(destinations.size()));
+    }
 }

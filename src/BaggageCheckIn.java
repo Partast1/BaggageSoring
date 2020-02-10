@@ -7,8 +7,8 @@ public class BaggageCheckIn {
 	public void Recieve(Passenger pass) 
 	{
 		
-		System.out.print("BaggageCheckIn");
-		System.out.print("Available room in array: "+ sorting.baggageQueue.remainingCapacity() + "Array max length" + sorting.baggageQueue.size());
+//		System.out.print("BaggageCheckIn");
+//		System.out.print("Available room in array: "+ sorting.baggageQueue.remainingCapacity() + "Array max length" + sorting.baggageQueue.size());
 		if (sorting.baggageQueue.size() <= sorting.baggageQueue.remainingCapacity() )
 		{
 			
