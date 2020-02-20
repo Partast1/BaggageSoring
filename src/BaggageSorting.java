@@ -6,7 +6,9 @@ public class BaggageSorting {
 	public BlockingQueue<Baggage> baggageQueue = new ArrayBlockingQueue<>(8);
 	public int currentSize = baggageQueue.size();
 
-	public void Receive(Baggage bag) {
+	public void Receive(Baggage bag)
+	{
 		baggageQueue.add(bag);
+//		bag.barcode
 	}
 }

@@ -4,7 +4,7 @@ public class BaggageCheckIn {
 
 	
 	BaggageSorting sorting = new BaggageSorting();
-	public void Recieve(Passenger pass) 
+	public void RecievePassenger(Passenger pass)
 	{
 		
 //		System.out.print("BaggageCheckIn");
