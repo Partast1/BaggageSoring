@@ -2,13 +2,13 @@
 
 public class BarcodeFactory {
 
-	BarcodeGenerator barcodeGen = new BarcodeGenerator();
+	BarcodeSerialGenerator barcodeGen = new BarcodeSerialGenerator();
 	
 	public Barcode GenerateBarcode() {
 
 		
 		Barcode barcode; 
-		barcode = new Barcode(barcodeGen.GetBarcode());
+		barcode = new Barcode(barcodeGen.GetBarcode(), );
 
 		return barcode;
 	}

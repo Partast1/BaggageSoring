@@ -9,6 +9,10 @@ public class BaggageSorting {
 	public void Receive(Baggage bag)
 	{
 		baggageQueue.add(bag);
+		for (Baggage baggage: baggageQueue)
+		{
+			System.out.println(baggage.barcode.destination.toString());
+		}
 //		bag.barcode
 	}
 }

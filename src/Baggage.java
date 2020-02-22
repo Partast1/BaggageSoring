@@ -7,7 +7,8 @@ public class Baggage {
 //	public Baggage() {
 //		this.weight = 0;
 //	}
-	public Baggage(Barcode Bar) {
+	public Baggage(Barcode Bar)
+	{
 		barcode = Bar;
 	}
 	public int getWeight() {
