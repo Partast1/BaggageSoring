@@ -7,12 +7,7 @@ public class Main {
 		ProductionThreadHandler handle = new ProductionThreadHandler();
 		handle.start();
 		
-		
-	
-
 		}
-		
-		
 
 	}
 

@@ -1,10 +1,12 @@
 import java.util.Random;
 
 public class DestinationFactory {
-    public String Generate(){
+    public Destination Generate(){
+
     DestinationGenerator destinationGen = new DestinationGenerator();
         Random rnd = new Random();
-        String destination = destinationGen.getRandomDestination();
+        Destination destination = new Destination(destinationGen.getRandomDestination());
+
         return destination;
     }
 }

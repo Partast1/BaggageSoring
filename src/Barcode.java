@@ -5,12 +5,12 @@ public class Barcode {
 	private int code;
 	private Passenger passenger;
 	private LocalDateTime checkIn;
-	public String destination;
+	private Destination destination;
 
 	
-	public Barcode(int Code, String Destination) {
+	public Barcode(int Code) {
 		setCode(Code);
-		destination = Destination;
+
 		
 	}
 
@@ -35,5 +35,12 @@ public class Barcode {
 	public void setPassenger(Passenger passenger) {
 		this.passenger = passenger;
 	}
-	
+
+	public Destination getDestination() {
+		return destination;
+	}
+
+	public void setDestination(Destination destination) {
+		this.destination = destination;
+	}
 }

@@ -11,7 +11,7 @@ public class BaggageSorting {
 		baggageQueue.add(bag);
 		for (Baggage baggage: baggageQueue)
 		{
-			System.out.println(baggage.barcode.destination.toString());
+			System.out.println(baggage.barcode.destination.getPlace());
 		}
 //		bag.barcode
 	}

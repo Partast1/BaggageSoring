@@ -3,7 +3,8 @@ import java.util.Random;
 public class PassengerFactory {
 
 //Generates randomized Passenger with baggage
-	public Passenger GenerateRandomPerson() {
+	public Passenger GenerateRandomPerson()
+	{
 		PassengerGenerator people = new PassengerGenerator();
 		BaggageFactory bf = new BaggageFactory();
 		Passenger passenger = new Passenger(people.getRandomFirstName(), people.getRandomLastName());

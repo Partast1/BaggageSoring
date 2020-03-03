@@ -3,13 +3,11 @@ public class Airplane {
 
 	Manifest manifest;
 	private int flightNumber;
-	private String destination;
+	private Destination destination;
 	
-	public Airplane(int FlightNumb, Manifest mf, String des) {
+	public Airplane(int FlightNumb, Manifest mf) {
 		setFlightNumber(FlightNumb);
 		manifest = mf;
-		setDestination(des);
-		
 	}
 	
 	public int getFlightNumber() {
@@ -20,11 +18,11 @@ public class Airplane {
 	}
 
 
-	public String getDestination() {
+	public Destination getDestination() {
 		return destination;
 	}
 
-	public void setDestination(String destination) {
+	public void setDestination(Destination destination) {
 		this.destination = destination;
 	}
 }
