@@ -16,6 +16,7 @@ public  DestinationGenerator(){
 }
     public String getRandomDestination() {
         Random rnd = new Random();
+//        int desNumber = rnd.nextInt(destinations.size());
         String des = destinations.get(rnd.nextInt(destinations.size()));
         return des;
     }

@@ -5,7 +5,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		ProductionThreadHandler handle = new ProductionThreadHandler();
-		handle.start();
+
+		while (true){
+			new Thread(handle).start();
+		}
+
 		
 		}
 
