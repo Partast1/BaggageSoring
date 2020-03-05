@@ -2,7 +2,7 @@ import java.util.Iterator;
 
 public class BaggageCheckIn {
 
-	BaggageSorting sorting = new BaggageSorting();
+	BaggageSorting sorting;
 	Destination destination;
 
 	public BaggageCheckIn(Destination des)
@@ -21,4 +21,6 @@ public class BaggageCheckIn {
 			}
 		}
 	}
+
+
 }
